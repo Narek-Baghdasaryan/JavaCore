@@ -1,10 +1,13 @@
 package homework.medicalCenter;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class MedicalCenterDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         Storage storage = new Storage();
         boolean isRun = true;
         while (isRun) {
@@ -90,8 +93,8 @@ public class MedicalCenterDemo {
         System.out.println("please input patient doctor ");
         String doctor = scanner.nextLine();
         System.out.println("please input patient registerDateTime ");
-        String registeredDateTime= scanner.nextLine();
-        Patient patient = new Patient(id,name,surname,phone,doctor,registeredDateTime);
+        String registerDateTime = scanner.nextLine();
+        Patient patient = new Patient(id,name,surname,phone,doctor,registerDateTime);
         storage.addPatient(patient);
         System.out.println("patient created");
     }
