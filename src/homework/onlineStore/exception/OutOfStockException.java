@@ -1,6 +1,7 @@
-package homework.onlineShop;
+package homework.onlineStore.exception;
 
-public class OutOfStockException extends Exception{
+public class OutOfStockException extends Exception {
+
     public OutOfStockException() {
     }
 
